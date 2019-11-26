@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+}
+
+.menu__link {
+  display: block;
+  padding: 30px 15px;
+  
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: #242424;
+  }
+
+  &--active {
+    padding-bottom: 25px;
+
+    background-color: #242424;
+    border-bottom: 5px solid #ffffff;
+  }
+}

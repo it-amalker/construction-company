@@ -1,0 +1,28 @@
+.header-telephone__number {
+  position: relative;
+
+  display: block;
+  padding: 30px 5px 30px 20px;
+
+  color: #ffffff;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 33px;
+    left: 0;
+  
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/sprites/sprite.svg#phone-icon");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #242424;
+    color: #FFFAFA;
+  }
+}

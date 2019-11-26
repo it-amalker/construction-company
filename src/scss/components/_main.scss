@@ -1,122 +1,6 @@
-/*  ---------- GENERAL STYLES  ---------- */
-
-.container {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
+.main-page {
+  @include container-desktop;
 }
-
-.column {
-  margin-bottom: 30px;
-  padding: 15px 15px;
-
-  color: #000000;
-  background-color: #FDF5E6;
-  background-image: url("../img/light_pattern.png");
-  background-repeat: repeat;
-  background-position: 0 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-
-/*  ---------- MAIN HEADER, MENU-NAVIGATION, CONTACT-TEL  ---------- */
-
-
-.main-header {
-  background-color: #000000;
-  margin-bottom: 40px;
-}
-
-.main-header-logo {
-  width: 50px;
-  height: 50px;
-
-  padding: 15px 20px;
-}
-
-.main-header-logo:hover {
-  filter: drop-shadow(0px 0px 10px rgba(240, 239, 237, 0.6)); 
-}
-
-.main-navigation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-.site-navigation {
-  display: flex;
-
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.site-navigation a {
-  display: block;
-  
-  padding: 30px 15px;
-  
-  color: #ffffff;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
-  background-color: #242424;
-}
-
-.site-navigation .current-page {
-  padding-bottom: 25px;
-
-  background-color: #242424;
-
-  border-bottom: 5px solid #ffffff;
-}
-
-.contact-telephone {
-  position: relative;
-
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-
-  color: #ffffff;
-}
-
-.contact-telephone::before {
-  content: "";
-
-  position: absolute;
-  top: 33px;
-
-  width: 30px;
-  height: 30px;
-  background-image: url("../img/phone-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.contact-telephone a {
-  display: block;
-  
-  padding: 30px 19px 30px 25px;
-  
-  color: #ffffff;
-}
-
-.contact-telephone a:hover,
-.contact-telephone a:focus {
-  background-color: #242424;
-  color: #FFFAFA;
-}
-
-
-/* ---------- INTRODUCE SECTION ---------- */
 
 
 .introduce {
@@ -170,6 +54,12 @@
 
 
 /* ---------- SERVICES SECTION ---------- */
+
+
+
+.services {
+  @include block;
+}
 
 
 .services-list {
@@ -270,6 +160,7 @@
 .services-inner-page,
 .project-stages,
 .pool-construct {
+  @include block;
   display: flex;
   /*justify-content: space-between;*/
   align-items: center;
@@ -490,17 +381,25 @@
 /*  ---------- MAIN FOOTER ---------- */
 
 
+
+
+
+
 .main-footer {
+  color: #ffffff;
   background-color: #000000;
   margin-top: 40px;
 
   font-size: 12px;
 }
 
-.main-footer .container{
+.main-footer__wrapper {
+  @include container-desktop;
+
   display: flex;
   justify-content: space-between;
 }
+
 
 .footer-contacts {
   margin: 0;

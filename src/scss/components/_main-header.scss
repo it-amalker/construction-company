@@ -1,0 +1,13 @@
+.main-header {
+  margin-bottom: 40px;
+
+  background-color: #000000;
+  box-shadow: 0 2px 5px rgba(#000000, 0.7);
+}
+
+.main-header__wrapper {
+  @include container-desktop;
+
+  display: flex;
+  justify-content: space-between;
+}

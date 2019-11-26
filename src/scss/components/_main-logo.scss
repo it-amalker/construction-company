@@ -1,0 +1,16 @@
+.main-logo {
+  width: 50px;
+  height: 50px;
+  padding: 15px 20px;
+
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(0px 0px 10px rgba(240, 239, 237, 0.6));
+  }
+}
+
+.main-logo__img {
+  width: 50px;
+  height: 50px;
+}

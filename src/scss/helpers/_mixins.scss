@@ -1,1 +1,17 @@
+@mixin container-desktop {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
+@mixin block {
+  margin-bottom: 30px;
+  padding: 15px 15px;
+
+  color: #000000;
+  background-color: #FDF5E6;
+  background-image: url("../img/light_pattern.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
