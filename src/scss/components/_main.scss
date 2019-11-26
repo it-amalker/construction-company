@@ -1,0 +1,895 @@
+/*  ---------- GENERAL STYLES  ---------- */
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.column {
+  margin-bottom: 30px;
+  padding: 15px 15px;
+
+  color: #000000;
+  background-color: #FDF5E6;
+  background-image: url("../img/light_pattern.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/*  ---------- MAIN HEADER, MENU-NAVIGATION, CONTACT-TEL  ---------- */
+
+
+.main-header {
+  background-color: #000000;
+  margin-bottom: 40px;
+}
+
+.main-header-logo {
+  width: 50px;
+  height: 50px;
+
+  padding: 15px 20px;
+}
+
+.main-header-logo:hover {
+  filter: drop-shadow(0px 0px 10px rgba(240, 239, 237, 0.6)); 
+}
+
+.main-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.site-navigation {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-navigation a {
+  display: block;
+  
+  padding: 30px 15px;
+  
+  color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #242424;
+}
+
+.site-navigation .current-page {
+  padding-bottom: 25px;
+
+  background-color: #242424;
+
+  border-bottom: 5px solid #ffffff;
+}
+
+.contact-telephone {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  color: #ffffff;
+}
+
+.contact-telephone::before {
+  content: "";
+
+  position: absolute;
+  top: 33px;
+
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.contact-telephone a {
+  display: block;
+  
+  padding: 30px 19px 30px 25px;
+  
+  color: #ffffff;
+}
+
+.contact-telephone a:hover,
+.contact-telephone a:focus {
+  background-color: #242424;
+  color: #FFFAFA;
+}
+
+
+/* ---------- INTRODUCE SECTION ---------- */
+
+
+.introduce {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+
+  color: #000000;
+}
+
+.introduce-logo img {
+  width: 450px;
+  height: auto;  
+}
+
+.introduce-logo.inner-page img {
+  width: 350px;  
+}
+
+.introduce-logo:hover,
+.introduce-logo.inner-page:hover {
+  filter: drop-shadow(3px 3px 10px rgba(43, 41, 35, 0.5));
+}
+
+.introduce-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+}
+
+.introduce h1 {
+  margin: 0;
+  padding: 10px 20px;
+
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: bold;
+  width: 450px;
+}
+
+.introduce h2 {
+  margin: 0;
+  padding: 10px 20px;
+
+  font-size: 18px;
+  line-height: 24px;
+  width: 450px;  
+}
+
+
+/* ---------- SERVICES SECTION ---------- */
+
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services-item {
+  position: relative;
+
+  padding: 30px 0px;
+  padding-left: 130px;
+
+  width: 310px;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.services-item::before {
+  content:"";
+
+  position: absolute;
+  
+  top: 12px;
+  left: -10px;
+
+  width: 120px;
+  height: 120px;
+}
+
+.services-item:first-child::before {
+  background-image: url("../img/feature_1.png");
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: 35px 20px;
+  background-color: transparent;
+  filter: drop-shadow(3px 3px 5px rgba(32, 32, 31, 0.8));
+}
+
+.services-item:nth-child(2)::before {
+  background-image: url("../img/feature_2.png");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: transparent;   
+}
+
+.services-item:nth-child(3)::before {
+  background-image: url("../img/feature_3.png");
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: 25px 15px;
+  background-color: transparent;
+  filter: drop-shadow(3px 3px 5px rgba(32, 32, 31, 0.7));   
+}
+
+.services-item:nth-child(4)::before {
+  background-image: url("../img/feature_4.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: transparent;
+  filter: drop-shadow(3px 3px 5px rgba(32, 32, 31, 0.8));   
+}
+
+.services-item:nth-child(5)::before {
+  background-image: url("../img/feature_5.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 20px -10px;
+  background-color: transparent;
+  filter: drop-shadow(3px 3px 5px rgba(32, 32, 31, 0.8));   
+}
+
+.services-item:last-child::before {
+  background-image: url("../img/feature_6.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 15px;
+  background-color: transparent;
+  filter: drop-shadow(3px 3px 5px rgba(32, 32, 31, 0.8));   
+}
+
+
+/* -------- COMMON (ESTIMATE, CONSTRUCTION, PROJECT, CONTACT-INFO, ABOUT-US, other) SECTION -------- */
+
+
+.estimate,
+.construction,
+.project,
+.contact-info,
+.about-us,
+.services-inner-page,
+.project-stages,
+.pool-construct {
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
+
+  font-size: 12px;
+}
+
+.estimate-title,
+.construction-title,
+.project-title,
+.contact-info-title,
+.about-us-title,
+.services-inner-page-title,
+.estimate-example-title,
+.project-stages-title,
+.project-composition-title,
+.project-sketch-title,
+.project-architecture-title,
+.project-constructive-title,
+.project-3d-title,
+.gallery-title,
+.pool-construct-title,
+.pool-gallery-title,
+.house-gallery-title {
+  margin: 0;
+  padding: 15px 30px;
+
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;  
+}
+
+.estimate-description,
+.project-description,
+.about-us-description {
+  margin: 0;
+  padding: 10px 10px;
+
+  width: 470px;
+
+  text-align: justify;
+}
+
+.button {
+  display: block;
+
+  margin: 10px auto; 
+  padding: 15px 20px;
+
+  width: 110px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #242424;
+}
+
+
+/* ---------- ESTIMATE SECTION ---------- */
+
+.estimate-content-wrapper {
+  width: 510px;
+}
+
+.estimate-logo {
+  width: 400px; 
+}
+
+.estimate-logo img {
+  display: block;
+  
+  margin: 0 auto;
+  
+  width: 350px;
+  height: auto;
+
+  filter: drop-shadow(3px 3px 10px rgba(32, 32, 31, 0.5));   
+}
+
+
+/* ---------- CONSTRUCTION SECTION ---------- */
+
+
+.construction-logo {
+  width: 400px;
+}
+
+.construction-logo img {
+  display: block;
+  
+  margin: 0 auto;
+  
+  width: 300px;
+  height: auto;
+
+  filter: drop-shadow(3px 3px 10px rgba(32, 32, 31, 0.5));   
+}
+
+.construction-content-wrapper {
+  width: 510px;
+
+}
+
+.construction-item {
+  margin: 0;
+  padding: 2px;
+
+  width: 470px;
+}
+
+
+/* ---------- PROJECT SECTION ---------- */
+
+
+.project-content-wrapper {
+  width: 510px;
+}
+
+.project-logo {
+  width: 400px;
+
+}
+
+.project-logo img {
+  display: block;
+
+  margin: 0 auto;
+
+  width: 350px;
+  height: auto;
+
+  filter: drop-shadow(3px 3px 10px rgba(32, 32, 31, 0.5));   
+}
+
+/* ---------- CONTACT-INFO SECTION ---------- */
+
+
+.contact-info-logo { 
+  width: 510px;    
+}
+
+.contact-info-logo img { 
+  display: block;
+  margin: 0 auto;
+
+  width: 300px;
+  height: auto;
+
+  filter: drop-shadow(3px 3px 10px rgba(32, 32, 31, 0.5));   
+}
+
+.contact-info-content-wrapper {
+  width: 400px;
+}
+
+.contact-info-description {
+  margin: 0;
+  margin-bottom: 15px; 
+  padding: 0;
+  text-align: center;
+
+  font-size: 14px;
+}
+
+/* ----- forms ----- */
+
+.contact-info-item {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  width: 100%;
+  text-align: center;
+  
+  font-size: 14px;
+}
+
+.contact-info-item label {
+  display: block;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.contact-info-item input {
+  box-sizing: border-box;
+  width: 65%;
+  padding: 5px;
+
+
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.contact-info input:focus {
+  border-color: #ece8e3;
+}
+
+.button-contact-info {
+  margin: 15px auto;
+  padding: 15px 15px;
+
+  width: 140px;
+
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+
+/*  ---------- MAIN FOOTER ---------- */
+
+
+.main-footer {
+  background-color: #000000;
+  margin-top: 40px;
+
+  font-size: 12px;
+}
+
+.main-footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contacts {
+  margin: 0;
+  padding: 20px 20px;
+
+  width: 280px;
+}
+
+.footer-contacts a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-developer-info {
+  margin: auto 0px;
+  padding: 20px 20px;
+
+  width: 280px;
+  text-align: center;
+}
+
+.footer-developer-info b {
+  display: block;
+  margin-bottom: 5px;   
+}
+
+.footer-icon {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+
+  background-image: url("../img/footer_icon.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 65%;
+  filter: invert(100);
+}
+
+.footer-developer-name {
+  position: relative;
+
+  padding: 10px 10px 10px 25px;
+
+  border: 1px solid white;
+}
+
+.footer-developer-name::before {
+  content: "";
+
+  position: absolute;
+
+  width: 18px;
+  height: 18px;
+
+  top: 9px;
+  left: 4px;
+
+  background-image: url("../img/squirrel-corp_logo.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  
+  transition: 0.3s ease-out;
+}
+
+.footer-developer-name:hover,
+.footer-developer-name:hover::before {
+  color: rgb(245, 134, 8);
+}
+
+.footer-developer-name:hover::before { 
+  transform: rotate(360deg) scale(1.1);
+}
+
+
+/* ---------- ABOUT-US.HTML ABOUT-US SECTION ---------- */
+
+
+.about-us-content-wrapper {
+  width: 510px;
+}
+
+.about-us-logo {
+  width: 400px;   
+}
+
+.about-us-logo img {
+  display: block;
+
+  margin: 0 auto;
+
+  width: 350px;
+  height: auto;
+
+  filter: drop-shadow(3px 3px 5px rgba(32, 32, 31, 0.5));   
+}
+
+/* ---------- ABOUT-US.HTML SERVICE-INNER-PAGE SECTION ---------- */
+
+
+.services-inner-page-wrapper {
+  width: 510px;
+}
+
+.services-inner-page-logo {
+  width: 400px;
+}
+
+.services-inner-page-logo img {
+  display: block;
+
+  margin: 0 auto;
+
+  width: 380px;
+  height: auto;
+
+  filter: drop-shadow(3px 3px 10px rgba(32, 32, 31, 0.5)); 
+}
+
+.services-inner-page-item {
+  margin: 0 auto;
+  padding: auto 0;
+
+  width: 400px;
+
+  text-align: left;
+}
+
+
+/* ---------- ESTIMATE.HTML ---------- */
+
+
+.construction-info {
+  margin: 0;
+  padding: 10px 30px;
+}
+
+.estimate-item {
+  margin: 0;
+  padding: 0;
+}
+
+.estimate-example {
+  padding-bottom: 5px; 
+}
+.estimate-example-table {
+  border-collapse: collapse;
+
+  margin: 20px auto ;
+}
+
+.estimate-example-table-title {
+  margin-bottom: 10px;
+
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.estimate-example-table td, th {
+  padding: 5px;
+
+  border: 2px solid #000000;
+
+  font-size: 14px;
+}
+
+.estimate-example-table td:first-child {
+  width: 510px;
+
+  font-size: 12px;
+}
+
+.estimate-example-table td:last-child {
+  width: 50px;
+  
+  text-align: center;
+  font-size: 12px;  
+}
+
+.estimate-example-table tr:last-child td {
+  font-size: 14px;  
+  text-decoration: underline;
+}
+
+.estimate-example:last-child .estimate-example-table tr:nth-last-child(2) td {
+  font-size: 14px;  
+  text-decoration: underline;
+}
+
+
+/* ---------- DESIGN.HTML ---------- */
+
+
+.project-item {
+  margin: 0;
+  padding: 5px;
+
+  width: 470px;   
+}
+
+.project-stages-logo {
+  width: 400px;
+}
+
+.project-stages-logo img {
+  display: block;
+
+  margin: 0 auto;
+
+  width: 300px;
+  height: auto;
+
+  filter: drop-shadow(3px 3px 5px rgba(32, 32, 31, 0.5)); 
+}
+
+.project-stages-content-wrapper {
+  width: 510px;
+}
+
+.project-stages-item {
+  margin: 0;
+  padding: 2px;
+
+  width: 470px;
+}
+
+.project-composition-description,
+.project-sketch-description,
+.project-constructive-description,
+.project-3d-description,
+.pool-construct-description {
+  margin: 0;
+  padding: 10px 30px;
+
+  font-size: 12px;
+  text-align: justify;
+}
+
+.project-composition-description span {
+  color: #0000CD; 
+}
+
+.project-composition-description a {
+  color: #0000CD;
+  text-decoration: underline;
+}
+
+.project-sketch-list,
+.project-constructive-list {
+  margin: 0 auto;
+}
+
+.project-sketch h4,
+.project-architecture h4,
+.project-constructive h4 {
+  margin: 0;
+  padding: 5px 30px;
+
+  font-size: 12px;
+  text-align: left;  
+}
+
+.project-sketch-item,
+.project-architecture-item,
+.project-constructive-item {
+  margin: 0;
+  padding: 2px;
+
+  font-size: 12px;
+}
+
+.project-sketch-logo img {
+  display: block;
+  margin: auto;
+
+  width: 500px;
+  height: auto;
+  
+  filter: drop-shadow(3px 3px 5px rgba(32, 32, 31, 0.5)); 
+}
+
+.project-architecture-logo img,
+.project-constructive-logo img {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+
+  width: 550px;
+  height: auto;
+  
+  filter: drop-shadow(3px 3px 5px rgba(32, 32, 31, 0.5)); 
+}
+
+.project-3d-logo img {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+
+  width: 800px;
+  height: auto;
+  
+  filter: drop-shadow(3px 3px 5px rgba(32, 32, 31, 0.5)); 
+}
+
+
+/* ---------- GALLERY.HTML GALLERY SECTION, POOL.HTML POOL-GALLERY SECTION ---------- */
+
+
+.gallery-list,
+.pool-gallery-list,
+.house-gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 5px;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.gallery-item-image,
+.pool-gallery-item-image,
+.house-gallery-item-image {
+  margin: 0 auto;
+}
+
+.gallery-item,
+.house-gallery-item,
+.pool-gallery-item {
+  margin: 15px 5px;
+  
+  background-image: url("../img/gallery_pattern.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-color: rgba(24, 22, 22, 0.9);
+  filter: drop-shadow(0px 8px 5px rgba(32, 32, 31, 0.5));
+}
+
+.gallery-item-image img, 
+.house-gallery-item-image img,
+.pool-gallery-item-image img {
+  width: 290px;
+  height: 200px;    
+}
+
+.gallery-item-image.vertical img,
+.house-gallery-item-image.vertical img,
+.pool-gallery-item-image.vertical img {
+  width: 240px;
+  height: 320px;
+}
+
+.pool-construct-wrapper {
+  width: 510px;
+}
+
+.pool-construct-logo {
+  width: 400px;
+}
+
+.pool-construct-logo img {
+  display: block;
+  
+  margin: 0 auto;
+
+  width: 350px;
+  height: auto;
+
+  filter: drop-shadow(3px 3px 10px rgba(32, 32, 31, 0.5));   
+}
+
+.gallery-image-description {
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: -5px;
+  padding: 5px;
+
+  width: 290px;
+  
+
+  color: #ffffff;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 11px;
+}
+
+.gallery-image-description.vertical {
+  width: 240px;
+}
