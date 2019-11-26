@@ -1,82 +1,91 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>Контактная информация организации «Свой Дом»</title>
-        <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-        <link href="css/normalize.css" rel="stylesheet">
-        <!-- CSS 'style.css?ver=1.xx' used for clean cache on the user side -->
-        <link href="css/style.css?ver=1.01" rel="stylesheet">
-    </head>
-    <body>
-        <header class="main-header">
-            <nav class="main-navigation container">
-                <a class="main-header-logo" href="index.html">
-                    <img src="img/logo.svg" width="50px" height="50px" alt="Логотип организации «Свой Дом»">
-                </a>
-                <ul class="site-navigation">
-                    <li><a href="about-us.html">О нас</a></li>
-                    <li><a href="design.html">Проектирование</a></li>
-                    <li><a href="pool.html">Бассейны</a></li>
-                    <li><a href="estimate.html">Смета</a></li>
-                    <li><a href="gallery.html">Наши работы</a></li>
-                    <li><a class="current-page">Контакты</a></li>
-                </ul>
-                <ul class="contact-telephone">
-                    <li><a>+7 (900) 500-65-95</a></li>
-                </ul>
-            </nav>        
-        </header>
-        <main class="container">
-            <section class="introduce">
-                <div class="introduce-logo inner-page">
-                    <img src="img/contact.png" width="512px" height="512px" alt="Папка с документами">
-                </div>
-                <div class="introduce-title-wrapper">
-                    <h1 class="introduce-title">Строительная организация «Свой Дом»</h1>
-                    <h2  class="introduce-description">Строительство частных домов в Москве и Московской области</h2>
-                </div>
-            </section>
-            <section class="contact-info column">
-                <div class="contact-info-logo">
-                    <img src="img/contact-info.png" width="540px" height="576px" alt="Изображение телефонной трубки и электронного письма">
-                </div>
-                <div class="contact-info-content-wrapper">
-                    <h3 class="contact-info-title">Отправить заявку</h3>
-                    <p class="contact-info-description">Оставьте Ваши данные и мы Вам перезвоним</p> 
-                    <form class="contact-info-form" action="mail.php" method="POST">
-                        <p class="contact-info-item">
-                            <label for="contact-info-name">Ваше имя</label>
-                            <input id="contact-info-name" type="text" name="contact-info-name" value="" placeholder="Григорий" required>
-                        </p>
-                        <p class="contact-info-item">
-                            <label for="contact-info-tel">Телефон</label>
-                            <input id="contact-info-tel" type="tel" name="contact-info-tel" value="" placeholder="+7(910) 911 92 92" required>
-                        </p>
-                        <p class="contact-info-item">
-                                <label for="contact-info-email">E-mail</label>
-                                <input id="contact-info-email" type="email" name="contact-info-email" value="" placeholder="georg@yandex.ru">
-                            </p>
-                        <button class="button button-contact-info" type="submit">Отправить</button>
-                    </form> 
-                </div> 
-            </section>  
-        </main>
-        <footer class="main-footer">
-            <div class="container">
-                <div class="footer-contacts">
-                    Строительная организация «Свой Дом»<br>
-                    <a href="contacts.html">Как с нами связаться?</a><br>
-                    E-mail: sales@moidom.com<br>
-                    Телефон: +7 (900) 500-65-95
-                </div>
-                <div class="footer-icon"></div>
-                <div class="footer-developer-info">
-                    <b>Разработано:</b>
-                    <a class="footer-developer-name">Sqrl Corp.</a>
-                </div>
-            </div>
-        </footer>
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Контактная информация организации «Свой Дом»</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+
+  <!-- CSS 'style.css?ver=1.xx' used for clean cache on the user side -->
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-navigation container">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/logo.svg" width="50px" height="50px" alt="Логотип организации «Свой Дом»">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="about-us.html">О нас</a></li>
+        <li><a href="design.html">Проектирование</a></li>
+        <li><a href="pool.html">Бассейны</a></li>
+        <li><a href="estimate.html">Смета</a></li>
+        <li><a href="gallery.html">Наши работы</a></li>
+        <li><a class="current-page">Контакты</a></li>
+      </ul>
+      <ul class="contact-telephone">
+        <li><a>+7 (900) 500-65-95</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="introduce">
+      <div class="introduce-logo inner-page">
+        <img src="img/contact.png" width="512px" height="512px" alt="Папка с документами">
+      </div>
+      <div class="introduce-title-wrapper">
+        <h1 class="introduce-title">Строительная организация «Свой Дом»</h1>
+        <h2 class="introduce-description">Строительство частных домов в Москве и Московской области</h2>
+      </div>
+    </section>
+    <section class="contact-info column">
+      <div class="contact-info-logo">
+        <img src="img/contact-info.png" width="540px" height="576px"
+          alt="Изображение телефонной трубки и электронного письма">
+      </div>
+      <div class="contact-info-content-wrapper">
+        <h3 class="contact-info-title">Отправить заявку</h3>
+        <p class="contact-info-description">Оставьте Ваши данные и мы Вам перезвоним</p>
+        <form class="contact-info-form" action="mail.php" method="POST">
+          <p class="contact-info-item">
+            <label for="contact-info-name">Ваше имя</label>
+            <input id="contact-info-name" type="text" name="contact-info-name" value="" placeholder="Григорий" required>
+          </p>
+          <p class="contact-info-item">
+            <label for="contact-info-tel">Телефон</label>
+            <input id="contact-info-tel" type="tel" name="contact-info-tel" value="" placeholder="+7(910) 911 92 92"
+              required>
+          </p>
+          <p class="contact-info-item">
+            <label for="contact-info-email">E-mail</label>
+            <input id="contact-info-email" type="email" name="contact-info-email" value=""
+              placeholder="georg@yandex.ru">
+          </p>
+          <button class="button button-contact-info" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-contacts">
+        Строительная организация «Свой Дом»<br>
+        <a href="contacts.html">Как с нами связаться?</a><br>
+        E-mail: sales@moidom.com<br>
+        Телефон: +7 (900) 500-65-95
+      </div>
+      <div class="footer-icon"></div>
+      <div class="footer-developer-info">
+        <b>Разработано:</b>
+        <a class="footer-developer-name">Sqrl Corp.</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
