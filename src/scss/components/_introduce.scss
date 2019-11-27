@@ -1,0 +1,36 @@
+.introduce {
+  display: flex;
+}
+
+.introduce__logo-img {
+  width: 450px;
+  height: auto;  
+
+  &--inner-page {
+    width: 350px; 
+  }
+
+  &:hover,
+  &--inner-page:hover {
+    filter: drop-shadow(3px 3px 10px rgba(43, 41, 35, 0.5));
+  }
+}
+
+.introduce-title__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  width: 450px;
+  padding: 10px 20px;  
+}
+
+.introduce__title {
+  margin-bottom: 20px;
+  
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.introduce__subtitle {
+  font-size: 18px;
+}

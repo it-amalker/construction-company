@@ -1,0 +1,11 @@
+.main-page {
+  @include container-desktop;
+}
+
+.main-page__introduce {
+  margin-bottom: 40px;
+}
+
+.main-page__block-margin {
+  margin-bottom: 30px;
+}
