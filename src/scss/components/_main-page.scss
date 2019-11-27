@@ -1,5 +1,8 @@
 .main-page {
   @include container-desktop;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .main-page__introduce {

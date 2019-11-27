@@ -4,8 +4,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 30px;
-
-  font-size: 12px;
 }
 
 .content-block__wrapper {
@@ -13,9 +11,11 @@
 }
 
 .content-block__title {
-  margin-bottom: 15px;
-  font-size: 16px;
-  text-align: center;  
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  text-align: center; 
+  text-transform: uppercase; 
 }
 
 .content-block__description {
@@ -26,6 +26,18 @@
   &:last-of-type {
     margin-bottom: 25px;
   }
+
+  &--form {
+    text-align: center;
+  }
+}
+
+.content-block__list {
+  padding-left: 15%;
+}
+
+.content-block__item {
+  padding-left: 5px;
 }
 
 .content-block__link-more {
@@ -35,8 +47,11 @@
   padding: 15px 20px;
   box-sizing: border-box;
 
+  font-size: 14px;
   color: #ffffff;
+  font-weight: bold;
   text-align: center;
+  text-transform: uppercase; 
 
   background-color: #000000;
   border-radius: 10px;
@@ -60,8 +75,8 @@
 
 .content-block__logo-img {
   display: block;
-  width: 350px;
+  width: 100%;
   height: auto;
   
-  filter: drop-shadow(3px 3px 10px rgba(32, 32, 31, 0.5));   
+  filter: drop-shadow(3px 3px 10px rgba(32, 32, 31, 0.5));
 }

@@ -1,0 +1,17 @@
+.footer-contacts {
+  width: 300px;
+  padding: 20px 0;  
+}
+
+.footer-contacts__link {
+  color: #ffffff;
+  text-decoration: underline;
+
+  &:hover {
+    color: rgba(#ffffff, 0.6)
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3)
+  }
+}

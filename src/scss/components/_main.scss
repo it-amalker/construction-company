@@ -11,10 +11,10 @@
 /* -------- COMMON (ESTIMATE, CONSTRUCTION, PROJECT, CONTACT-INFO, ABOUT-US, other) SECTION -------- */
 
 
-.estimate,
-.construction,
-.project,
-.contact-info,
+
+
+
+
 .about-us,
 .services-inner-page,
 .project-stages,
@@ -27,10 +27,10 @@
   font-size: 12px;
 }
 
-.estimate-title,
-.construction-title,
-.project-title,
-.contact-info-title,
+
+
+
+
 .about-us-title,
 .services-inner-page-title,
 .estimate-example-title,
@@ -52,8 +52,8 @@
   text-align: center;  
 }
 
-.estimate-description,
-.project-description,
+
+
 .about-us-description {
   margin: 0;
   padding: 10px 10px;
@@ -63,275 +63,25 @@
   text-align: justify;
 }
 
-.button {
-  display: block;
-
-  margin: 10px auto; 
-  padding: 15px 20px;
-
-  width: 110px;
-  color: #ffffff;
-  background-color: #000000;
-}
-
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: #242424;
-}
 
 
-/* ---------- ESTIMATE SECTION ---------- */
 
-.estimate-content-wrapper {
-  width: 510px;
-}
-
-.estimate-logo {
-  width: 400px; 
-}
-
-.estimate-logo img {
-  display: block;
-  
-  margin: 0 auto;
-  
-  width: 350px;
-  height: auto;
-
-  filter: drop-shadow(3px 3px 10px rgba(32, 32, 31, 0.5));   
-}
-
-
-/* ---------- CONSTRUCTION SECTION ---------- */
-
-
-.construction-logo {
-  width: 400px;
-}
-
-.construction-logo img {
-  display: block;
-  
-  margin: 0 auto;
-  
-  width: 300px;
-  height: auto;
-
-  filter: drop-shadow(3px 3px 10px rgba(32, 32, 31, 0.5));   
-}
-
-.construction-content-wrapper {
-  width: 510px;
-
-}
-
-.construction-item {
-  margin: 0;
-  padding: 2px;
-
-  width: 470px;
-}
-
-
-/* ---------- PROJECT SECTION ---------- */
-
-
-.project-content-wrapper {
-  width: 510px;
-}
-
-.project-logo {
-  width: 400px;
-
-}
-
-.project-logo img {
-  display: block;
-
-  margin: 0 auto;
-
-  width: 350px;
-  height: auto;
-
-  filter: drop-shadow(3px 3px 10px rgba(32, 32, 31, 0.5));   
-}
 
 /* ---------- CONTACT-INFO SECTION ---------- */
 
 
-.contact-info-logo { 
-  width: 510px;    
-}
 
-.contact-info-logo img { 
-  display: block;
-  margin: 0 auto;
 
-  width: 300px;
-  height: auto;
 
-  filter: drop-shadow(3px 3px 10px rgba(32, 32, 31, 0.5));   
-}
-
-.contact-info-content-wrapper {
-  width: 400px;
-}
-
-.contact-info-description {
-  margin: 0;
-  margin-bottom: 15px; 
-  padding: 0;
-  text-align: center;
-
-  font-size: 14px;
-}
 
 /* ----- forms ----- */
 
-.contact-info-item {
-  margin: 0;
-  margin-bottom: 10px;
-  padding: 0;
 
-  width: 100%;
-  text-align: center;
-  
-  font-size: 14px;
-}
-
-.contact-info-item label {
-  display: block;
-  margin-left: 5px;
-  margin-bottom: 5px;
-}
-
-.contact-info-item input {
-  box-sizing: border-box;
-  width: 65%;
-  padding: 5px;
-
-
-  font: inherit;
-
-  background-color: transparent;
-  border: 2px solid #000000;
-}
-
-.contact-info input:focus {
-  border-color: #ece8e3;
-}
-
-.button-contact-info {
-  margin: 15px auto;
-  padding: 15px 15px;
-
-  width: 140px;
-
-  font: inherit;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-
-  border: none;
-}
 
 
 /*  ---------- MAIN FOOTER ---------- */
 
 
-
-
-
-
-.main-footer {
-  color: #ffffff;
-  background-color: #000000;
-  margin-top: 40px;
-
-  font-size: 12px;
-}
-
-.main-footer__wrapper {
-  @include container-desktop;
-
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.footer-contacts {
-  margin: 0;
-  padding: 20px 20px;
-
-  width: 280px;
-}
-
-.footer-contacts a {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.footer-developer-info {
-  margin: auto 0px;
-  padding: 20px 20px;
-
-  width: 280px;
-  text-align: center;
-}
-
-.footer-developer-info b {
-  display: block;
-  margin-bottom: 5px;   
-}
-
-.footer-icon {
-  margin: auto;
-  width: 100px;
-  height: 100px;
-  background-color: #ffffff;
-
-  background-image: url("../img/footer_icon.png");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 65%;
-  filter: invert(100);
-}
-
-.footer-developer-name {
-  position: relative;
-
-  padding: 10px 10px 10px 25px;
-
-  border: 1px solid white;
-}
-
-.footer-developer-name::before {
-  content: "";
-
-  position: absolute;
-
-  width: 18px;
-  height: 18px;
-
-  top: 9px;
-  left: 4px;
-
-  background-image: url("../img/squirrel-corp_logo.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  
-  transition: 0.3s ease-out;
-}
-
-.footer-developer-name:hover,
-.footer-developer-name:hover::before {
-  color: rgb(245, 134, 8);
-}
-
-.footer-developer-name:hover::before { 
-  transform: rotate(360deg) scale(1.1);
-}
 
 
 /* ---------- ABOUT-US.HTML ABOUT-US SECTION ---------- */

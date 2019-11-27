@@ -5,8 +5,11 @@
 .menu__link {
   display: block;
   padding: 30px 15px;
-  
+
+  font-size: 14px;
   color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
 
   &:hover,
   &:focus {

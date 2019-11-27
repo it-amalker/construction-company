@@ -1,11 +1,14 @@
-.main-header {
+.main-footer {
+  color: #ffffff;
   background-color: #000000;
-  box-shadow: 0 2px 5px rgba(#000000, 0.7);
+
+  font-size: 14px;
 }
 
-.main-header__wrapper {
+.main-footer__wrapper {
   @include container-desktop;
 
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }

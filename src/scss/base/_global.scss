@@ -3,9 +3,7 @@ body {
   font-family: $font;
   font-size: $font-size;
   line-height: $line-height;
-  font-weight: $font-weight;
   color: $base-color;
-  text-transform: uppercase;
 
   background-color: $bg-base;
 
@@ -19,6 +17,7 @@ h2,
 h3,
 p,
 ul,
+ol,
 fieldset {
   margin: 0;
   padding: 0;
