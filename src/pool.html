@@ -9,149 +9,122 @@
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <!-- CSS 'style.css?ver=1.xx' used for clean cache on the user side -->
   <link href="css/style.min.css" rel="stylesheet">
-  <!-- FancyBox CSS -->
-  <link href="css/style.min.css" rel="stylesheet">
+
 </head>
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation container">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo.svg" width="50px" height="50px" alt="Логотип организации «Свой Дом»">
+    <div class="main-header__wrapper">
+      <a class="main-logo" href="index.html">
+        <img class="main-logo__img" src="img/sprites/sprite.svg#logo" width="50px" height="50px"
+          alt="Логотип организации «Свой Дом»">
       </a>
-      <ul class="site-navigation">
-        <li><a href="about-us.html">О нас</a></li>
-        <li><a href="design.html">Проектирование</a></li>
-        <li><a class="current-page">Бассейны</a></li>
-        <li><a href="estimate.html">Смета</a></li>
-        <li><a href="gallery.html">Наши работы</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="contact-telephone">
-        <li><a>+7 (900) 500-65-95</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="container">
-    <section class="introduce">
-      <div class="introduce-logo">
-        <img src="img/pool-logo.png" width="1327px" height="1246px" alt="Бассейн">
+      <nav class="main-navigation">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="about-us.html">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="design.html">Проектирование</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="pool.html">Бассейны</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="estimate.html">Смета</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="gallery.html">Наши работы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contacts.html#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-telephone">
+        <a class="header-telephone__number" href="tel:+79005006595">+7 (900) 500-65-95</a>
       </div>
-      <div class="introduce-title-wrapper">
-        <h1 class="introduce-title">Строительная организация «Свой Дом»</h1>
-        <h2 class="introduce-description">Строительство частных домов в Москве и Московской области</h2>
+    </div>
+  </header>
+  <main class="main-page">
+    <section class="main-page__introduce introduce">
+      <div class="introduce__logo">
+        <img class="introduce__logo-img introduce__logo-img--inner-page" src="img/pool-logo.png" alt="Бассейн">
+      </div>
+      <div class="introduce-title__wrapper">
+        <h1 class="introduce__title">Строительная организация «Свой Дом»</h1>
+        <h2 class="introduce__subtitle">Строительство частных домов в Москве и Московской области</h2>
       </div>
     </section>
-    <section class="pool-construct column">
-      <div class="pool-construct-wrapper">
-        <h3 class="pool-construct-title">Строительство бассейнов</h3>
-        <p class="pool-construct-description">Одним из популярных напралений бизнеса нашей компании является
+    <section class="content-block main-page__block-margin">
+      <div class="content-block__wrapper">
+        <h3 class="content-block__title">Строительство бассейнов</h3>
+        <p class="content-block__description">Одним из популярных напралений бизнеса нашей компании является
           строительство
           бассейнов под ключ и по доступной цене.</p>
-        <p class="pool-construct-description">Данный вариант строительства содержит все необходимые услуги по
+        <p class="content-block__description">Данный вариант строительства содержит все необходимые услуги по
           проектированию,
           монтажу и установке.</p>
-        <p class="pool-construct-description">Перед началом строительства бассейна подготавливается подробная
+        <p class="content-block__description">Перед началом строительства бассейна подготавливается подробная
           смета, которая содержит описание всех необходимых материалов и оборудования.</p>
       </div>
-      <div class="pool-construct-logo">
-        <img src="img/pool-construct-logo.png" width="1657px" height="1200px" alt="Иконка бассейна">
+      <div class="content-block__logo">
+        <img class="content-block__logo-img" src="img/pool-construct-logo.png" alt="Бассейн">
       </div>
     </section>
-    <section class="pool-gallery column">
-      <h3 class="pool-gallery-title">Монтаж композитного бассейна</h3>
-      <ul class="pool-gallery-list">
-        <li class="pool-gallery-item">
-          <p class="pool-gallery-item-image">
-            <a data-fancybox="gallery-pools" href="img/gallery/gallery-pool-2 (1).jpg">
-              <img src="img/gallery/gallery-pool-2 (1).jpg" alt="Монтаж композитного бассейна">
-            </a>
-          </p>
-          <p class="gallery-image-description">Монтаж композитного бассейна</p>
+    <section class="gallery">
+      <h3 class="gallery__title">Монтаж композитного бассейна</h3>
+      <ul class="gallery__cards">
+        <li class="gallery__card">
+          <img class="gallery__card-img" src="img/gallery/gallery-pool-2 (1).jpg" alt="Монтаж композитного бассейна">
+          <p class="gallery__card-description">Монтаж композитного бассейна</p>
         </li>
-        <li class="pool-gallery-item">
-          <p class="pool-gallery-item-image">
-            <a data-fancybox="gallery-pools" href="img/gallery/gallery-pool-2 (2).jpg">
-              <img src="img/gallery/gallery-pool-2 (2).jpg" alt="Монтаж композитного бассейна">
-            </a>
-          </p>
-          <p class="gallery-image-description">Монтаж композитного бассейна</p>
+        <li class="gallery__card">
+          <img class="gallery__card-img" src="img/gallery/gallery-pool-2 (2).jpg" alt="Монтаж композитного бассейна">
+          <p class="gallery__card-description">Монтаж композитного бассейна</p>
         </li>
-        <li class="pool-gallery-item">
-          <p class="pool-gallery-item-image">
-            <a data-fancybox="gallery-pools" href="img/gallery/gallery-pool-2 (3).jpg">
-              <img src="img/gallery/gallery-pool-2 (3).jpg" alt="Монтаж композитного бассейна">
-            </a>
-          </p>
-          <p class="gallery-image-description">Монтаж композитного бассейна</p>
+        <li class="gallery__card">
+          <img class="gallery__card-img" src="img/gallery/gallery-pool-2 (6).jpg" alt="Монтаж композитного бассейна">
+          <p class="gallery__card-description">Монтаж композитного бассейна</p>
         </li>
-        <li class="pool-gallery-item">
-          <p class="pool-gallery-item-image">
-            <a data-fancybox="gallery-pools" href="img/gallery/gallery-pool-2 (4).jpg">
-              <img src="img/gallery/gallery-pool-2 (4).jpg" alt="Монтаж композитного бассейна">
-            </a>
-          </p>
-          <p class="gallery-image-description">Монтаж композитного бассейна</p>
+        <li class="gallery__card">
+          <img class="gallery__card-img" src="img/gallery/gallery-pool-2 (4).jpg" alt="Монтаж композитного бассейна">
+          <p class="gallery__card-description">Монтаж композитного бассейна</p>
         </li>
-        <li class="pool-gallery-item">
-          <p class="pool-gallery-item-image">
-            <a data-fancybox="gallery-pools" href="img/gallery/gallery-pool-2 (5).jpg">
-              <img src="img/gallery/gallery-pool-2 (5).jpg" alt="Монтаж композитного бассейна">
-            </a>
-          </p>
-          <p class="gallery-image-description">Монтаж композитного бассейна</p>
+        <li class="gallery__card">
+          <img class="gallery__card-img" src="img/gallery/gallery-pool-2 (3).jpg" alt="Монтаж композитного бассейна">
+          <p class="gallery__card-description">Монтаж композитного бассейна</p>
         </li>
-        <li class="pool-gallery-item">
-          <p class="pool-gallery-item-image">
-            <a data-fancybox="gallery-pools" href="img/gallery/gallery-pool-2 (6).jpg">
-              <img src="img/gallery/gallery-pool-2 (6).jpg" alt="Монтаж композитного бассейна">
-            </a>
-          </p>
-          <p class="gallery-image-description">Монтаж композитного бассейна</p>
+        <li class="gallery__card">
+          <img class="gallery__card-img" src="img/gallery/gallery-pool-2 (9).jpg" alt="Монтаж композитного бассейна">
+          <p class="gallery__card-description">Монтаж композитного бассейна</p>
         </li>
-        <li class="pool-gallery-item">
-          <p class="pool-gallery-item-image vertical">
-            <a data-fancybox="gallery-pools" href="img/gallery/gallery-pool-2 (7).jpg">
-              <img src="img/gallery/gallery-pool-2 (7).jpg" alt="Монтаж композитного бассейна">
-            </a>
-          </p>
-          <p class="gallery-image-description vertical">Монтаж композитного бассейна</p>
-        </li>
-        <li class="pool-gallery-item">
-          <p class="pool-gallery-item-image">
-            <a data-fancybox="gallery-pools" href="img/gallery/gallery-pool-2 (8).jpg">
-              <img src="img/gallery/gallery-pool-2 (8).jpg" alt="Монтаж композитного бассейна">
-            </a>
-          </p>
-          <p class="gallery-image-description">Монтаж композитного бассейна</p>
-        </li>
-        <li class="pool-gallery-item">
-          <p class="pool-gallery-item-image vertical">
-            <a data-fancybox="gallery-pools" href="img/gallery/gallery-pool-2 (9).jpg">
-              <img src="img/gallery/gallery-pool-2 (9).jpg" alt="Монтаж композитного бассейна">
-            </a>
-          </p>
-          <p class="gallery-image-description vertical">Монтаж композитного бассейна</p>
+        <li class="gallery__card">
+          <img class="gallery__card-img" src="img/gallery/gallery-pool-2 (7).jpg" alt="Монтаж композитного бассейна">
+          <p class="gallery__card-description">Монтаж композитного бассейна</p>
         </li>
       </ul>
     </section>
   </main>
   <footer class="main-footer">
-    <div class="container">
-      <div class="footer-contacts">
-        Строительная организация «Свой Дом»<br>
-        <a href="contacts.html">Как с нами связаться?</a><br>
-        E-mail: sales@moidom.com<br>
-        Телефон: +7 (900) 500-65-95
-      </div>
-      <div class="footer-icon"></div>
-      <div class="footer-developer-info">
-        <b>Разработано:</b>
-        <a class="footer-developer-name">Sqrl Corp.</a>
+    <div class="main-footer__wrapper">
+      <ul class="footer-contacts">
+        <li class="footer-contacts__item">Строительная организация «Свой Дом»</li>
+        <li class="footer-contacts__item">
+          <a class="footer-contacts__link" href="contacts.html">Как с нами связаться?</a>
+        </li>
+        <li class="footer-contacts__item">E-mail: <a class="footer-contacts__link" href="mailto:sales@moidom.com">
+            sales@moidom.com</a></li>
+        <li class="footer-contacts__item">Телефон: <a class="footer-contacts__link" href="tel:+79005006595">+7 (900)
+            500-65-95</a></li>
+      </ul>
+      <div class="footer-logo"></div>
+      <div class="copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a href="https://github.com/it-amalker" class="copyright__developer">Sqrl Corp.</a>
       </div>
     </div>
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
