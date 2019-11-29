@@ -1118,6 +1118,86 @@ main {
   transform: rotate(360deg) scale(1.1);
 }
 
+.table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.table__title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.table__cell {
+  width: 10%;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: center;
+  border: 2px solid #c1c0b6;
+}
+
+.table__cell:first-child {
+  width: 5%;
+}
+
+.table__cell:nth-child(2) {
+  width: 5%;
+  text-align: left;
+}
+
+.table__cell:nth-child(2) {
+  width: 20%;
+}
+
+.table__cell:last-child {
+  width: 15%;
+}
+
+.table .table__cell--subtitle {
+  width: 5%;
+  text-align: center;
+}
+
+.table__row {
+  font-size: 15px;
+}
+
+.table__row--title {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.table__row--works {
+  font-weight: bold;
+  background-color: rgba(150, 184, 193, 0.3);
+}
+
+.table__row--works:hover {
+  background-color: rgba(150, 184, 193, 0.5);
+}
+
+.table__row--materials {
+  background-color: rgba(224, 139, 22, 0.3);
+}
+
+.table__row--materials:hover {
+  font-weight: bold;
+  background-color: rgba(224, 139, 22, 0.5);
+}
+
+.table__row--total {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
 /* ---------- SERVICES SECTION ---------- */
 /* -------- COMMON (ESTIMATE, CONSTRUCTION, PROJECT, CONTACT-INFO, ABOUT-US, other) SECTION -------- */
 .about-us,
@@ -1177,59 +1257,6 @@ main {
 /* ---------- ABOUT-US.HTML ABOUT-US SECTION ---------- */
 /* ---------- ABOUT-US.HTML SERVICE-INNER-PAGE SECTION ---------- */
 /* ---------- ESTIMATE.HTML ---------- */
-.construction-info {
-  margin: 0;
-  padding: 10px 30px;
-}
-
-.estimate-item {
-  margin: 0;
-  padding: 0;
-}
-
-.estimate-example {
-  padding-bottom: 5px;
-}
-
-.estimate-example-table {
-  border-collapse: collapse;
-  margin: 20px auto;
-}
-
-.estimate-example-table-title {
-  margin-bottom: 10px;
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.estimate-example-table td, th {
-  padding: 5px;
-  border: 2px solid #000000;
-  font-size: 14px;
-}
-
-.estimate-example-table td:first-child {
-  width: 510px;
-  font-size: 12px;
-}
-
-.estimate-example-table td:last-child {
-  width: 50px;
-  text-align: center;
-  font-size: 12px;
-}
-
-.estimate-example-table tr:last-child td {
-  font-size: 14px;
-  text-decoration: underline;
-}
-
-.estimate-example:last-child .estimate-example-table tr:nth-last-child(2) td {
-  font-size: 14px;
-  text-decoration: underline;
-}
-
 /* ---------- DESIGN.HTML ---------- */
 .project-item {
   margin: 0;

@@ -13,261 +13,243 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation container">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo.svg" width="50px" height="50px" alt="Логотип организации «Свой Дом»">
+    <div class="main-header__wrapper">
+      <a class="main-logo" href="index.html">
+        <img class="main-logo__img" src="img/sprites/sprite.svg#logo" width="50px" height="50px"
+          alt="Логотип организации «Свой Дом»">
       </a>
-      <ul class="site-navigation">
-        <li><a href="about-us.html">О нас</a></li>
-        <li><a href="design.html">Проектирование</a></li>
-        <li><a href="pool.html">Бассейны</a></li>
-        <li><a class="current-page">Смета</a></li>
-        <li><a href="gallery.html">Наши работы</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="contact-telephone">
-        <li><a>+7 (900) 500-65-95</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="container">
-    <section class="introduce">
-      <div class="introduce-logo inner-page">
-        <img src="img/prices.png" width="512px" height="512px" alt="Изображение ценника">
+      <nav class="main-navigation">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="about-us.html">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="design.html">Проектирование</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="pool.html">Бассейны</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--active">Смета</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="gallery.html">Наши работы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contacts.html#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-telephone">
+        <a class="header-telephone__number" href="tel:+79005006595">+7 (900) 500-65-95</a>
       </div>
-      <div class="introduce-title-wrapper">
-        <h1 class="introduce-title">Строительная организация «Свой Дом»</h1>
-        <h2 class="introduce-description">Строительство частных домов в Москве и Московской области</h2>
+    </div>
+  </header>
+  <main class="main-page">
+    <section class="main-page__introduce introduce">
+      <div class="introduce__logo">
+        <img class="introduce__logo-img" src="img/prices.png" alt="Изображение ценника">
+      </div>
+      <div class="introduce-title__wrapper">
+        <h1 class="introduce__title">Строительная организация «Свой Дом»</h1>
+        <h2 class="introduce__subtitle">Строительство частных домов в Москве и Московской области</h2>
       </div>
     </section>
-    <section class="estimate column">
-      <div class="estimate-content-wrapper">
-        <h3 class="estimate-title">Индивидуальный расчет сметы на строительство дома</h3>
-        <p class="estimate-description">Собираясь построить, важно знать цену строительства.
+    <section class="content-block main-page__block-margin">
+      <div class="content-block__wrapper">
+        <h3 class="content-block__title">Индивидуальный расчет сметы на строительство дома</h3>
+        <p class="content-block__description">Собираясь построить, важно знать цену строительства.
           И уже рассчитав свои возможности, приступать к строительству.
         </p>
-        <p class="estimate-description">Наша строительная организация предоставляет дополнительную
+        <p class="content-block__description">Наша строительная организация предоставляет дополнительную
           услугу - сметный расчет стоимости строительства дома, который еще до начала строительства
           даст заказчику представление об объеме будущих денежных вложений, а также сориентирует в
           выборе оптимальных по цене материалов.
         </p>
-        <p class="estimate-description">Заказав индивидуальный проект жилого дома у нас, вы в подарок
+        <p class="content-block__description">Заказав индивидуальный проект жилого дома у нас, вы в подарок
           получаете подробную смету на строительство дома по вашему индивидуальному проекту. Смета
           составляется профессиональным сметчиком, который основывается на проекте и учитывает объемы
           работ и материалов.
         </p>
-        <p class="estimate-description">Смета содержит актуальные цены материалов. По вашему желанию смета может
+        <p class="content-block__description">Смета содержит актуальные цены материалов. По вашему желанию смета может
           быть просчитана в других материалах, например, при изменении кровельного покрытия с металлочерепицы
           на фальцевую кровлю, или наоборот.
         </p>
-        <h3 class="estimate-title">Смета на строительство дома включает разделы:</h3>
-        <ul class="estimate-list">
-          <li class="estimate-item">Подготовительные работы: расчистка и разметка участка.</li>
-          <li class="estimate-item">Земляные работы: копка котлована под фундамент.</li>
+        <h4 class="content-block__title content-block__title--subtitle">Смета на строительство дома включает разделы:
+        </h4>
+        <ul class="content-block__list">
+          <li class="content-block__item content-block__item--bullet">Подготовительные работы: расчистка и разметка
+            участка.</li>
+          <li class="content-block__item content-block__item--bullet">Земляные работы: копка котлована под фундамент.
+          </li>
         </ul>
       </div>
-      <div class="estimate-logo">
-        <img src="img/estimate-logo.png" width="512px" height="512px" alt="Папка с документами">
+      <div class="content-block__logo">
+        <img class="content-block__logo-img" src="img/estimate-logo.png" alt="Папка с документами">
       </div>
     </section>
-    <section class="construction column">
-      <div class="construction-logo">
-        <img src="img/construction_logo.png" width="512px" height="512px" alt="Подъемный кран строит кирпичную стену">
+    <section class="content-block main-page__block-margin">
+      <div class="content-block__logo">
+        <img class="content-block__logo-img" src="img/construction_logo.png"
+          alt="Подъемный кран строит кирпичную стену">
       </div>
-      <div class="construction-content-wrapper">
-        <h3 class="construction-title">Основные этапы строительства дома</h3>
-        <ol class="construction-list">
-          <li class="construction-item">Подготовительные работы: расчистка и разметка участка.</li>
-          <li class="construction-item">Земляные работы: копка котлована под фундамент.</li>
-          <li class="construction-item">Фундаментные работы.</li>
-          <li class="construction-item">Кладка стен.</li>
-          <li class="construction-item">Монтаж перекрытия.</li>
-          <li class="construction-item">Кровельные работы: устройство стропил и покрытие.</li>
+      <div class="content-block__wrapper">
+        <h3 class="content-block__title">Основные этапы строительства дома</h3>
+        <h4 class="content-block__title content-block__title--subtitle">Именно эти этапы детально отражены в смете.</h4>
+        <ol class="content-block__list content-block__list-margin">
+          <li class="content-block__item">Подготовительные работы: расчистка и разметка участка.</li>
+          <li class="content-block__item">Земляные работы: копка котлована под фундамент.</li>
+          <li class="content-block__item">Фундаментные работы.</li>
+          <li class="content-block__item">Кладка стен.</li>
+          <li class="content-block__item">Монтаж перекрытия.</li>
+          <li class="content-block__item">Кровельные работы: устройство стропил и покрытие.</li>
         </ol>
-        <p class="construction-info">Именно эти этапы детально отражены в смете.</p>
       </div>
     </section>
-    <section class="estimate-example column">
-      <h3 class="estimate-example-title">Степень детализации сметы строительства дома (фундаментные работы) ч.1
-      </h3>
-      <table class="estimate-example-table">
-        <caption class="estimate-example-table-title">Этап I. Фундаментные работы</caption>
-        <tr>
-          <th>Наименование работ</th>
-          <th>Единица измерения</th>
-        </tr>
-        <tr>
-          <td>Геодезические работы</td>
-          <td>оси</td>
-        </tr>
-        <tr>
-          <td>Выборка грунта в отвал под нивелир</td>
-          <td>м<sup>3</sup></td>
-        </tr>
-        <tr>
-          <td>Доработка котлована вручную</td>
-          <td>м<sup>3</sup></td>
-        </tr>
-        <tr>
-          <td>Устройство песчаной подсыпки с уплотнением</td>
-          <td>м.п.</td>
-        </tr>
-        <tr>
-          <td>Устройство бетонной подготовки</td>
-          <td>м.п.</td>
-        </tr>
-        <tr>
-          <td>Установка опалубки для монолитного фундамента</td>
-          <td>м.п.</td>
-        </tr>
-        <tr>
-          <td>Изготовление арматурного каркаса</td>
-          <td>т</td>
-        </tr>
-        <tr>
-          <td>Монтаж арматурного каркаса</td>
-          <td>т</td>
-        </tr>
-        <tr>
-          <td>Укладка бетона с уплотнением</td>
-          <td>м<sup>3</sup></td>
-        </tr>
-        <tr>
-          <td>Снятие и очистка опалубки</td>
-          <td>м.п.</td>
-        </tr>
-        <tr>
-          <td>Закладка инженерных гильз</td>
-          <td>шт</td>
-        </tr>
-        <tr>
-          <td>Монтаж фундаментных блоков</td>
-          <td>шт</td>
-        </tr>
-        <tr>
-          <td>Забивка швов ФБС</td>
-          <td>шт</td>
-        </tr>
-        <tr>
-          <td>Забивка замков</td>
-          <td>шт</td>
-        </tr>
-        <tr>
-          <td>Выгрузка блока под монтаж (работа стропальщиков)</td>
-          <td>шт</td>
-        </tr>
-        <tr>
-          <td>Закладка участков кирпичом</td>
-          <td>шт</td>
-        </tr>
-        <tr>
-          <td>Устройство многослойной обмазочной гидроизоляции с подготовкой поверхности</td>
-          <td>м<sup>2</sup></td>
-        </tr>
-        <tr>
-          <td>Выгрузка материалов вручную (арматура, пиломатериалы и др.)</td>
-          <td>по согл.</td>
-        </tr>
-        <tr>
-          <td>Итого стоимость этапа I</td>
-          <td>... руб.</td>
-        </tr>
-      </table>
-    </section>
-    <section class="estimate-example column">
-      <h3 class="estimate-example-title">Степень детализации сметы строительства дома (фундаментные работы) ч.2
-      </h3>
-      <table class="estimate-example-table">
-        <caption class="estimate-example-table-title">Этап II. Закупка материала</caption>
-        <tr>
-          <th>Наименование работ</th>
-          <th>Единица измерения</th>
-        </tr>
-        <td>Песок с доставкой</td>
-        <td>м<sup>3</sup></td>
-        <tr>
-          <td>Бетон В 7.5 (М100) с доставкой</td>
-          <td>м<sup>3</sup></td>
-        </tr>
-        <tr>
-          <td>Арматура</td>
-          <td>т</td>
-        </tr>
-        <tr>
-          <td>Проволока вязальная</td>
-          <td>кг</td>
-        </tr>
-        <tr>
-          <td>Бетон М250 П4 с доставкой</td>
-          <td>м<sup>3</sup></td>
-        </tr>
-        <tr>
-          <td>Гильзы</td>
-          <td>шт</td>
-        </tr>
-        <tr>
-          <td>Раствор кладочный (3 рейса) с доставкой</td>
-          <td>м<sup>3</sup></td>
-        </tr>
-        <tr>
-          <td>Блок фундаментный б/у с доставкой(комплект)</td>
-          <td>шт</td>
-        </tr>
-        <tr>
-          <td>Пленка</td>
-          <td>м.п.</td>
-        </tr>
-        <tr>
-          <td>Битумная мастика</td>
-          <td>ведро</td>
-        </tr>
-        <tr>
-          <td>Кирпич</td>
-          <td>шт</td>
-        </tr>
-        <tr>
-          <td>Цемент М400 50кг</td>
-          <td>шт</td>
-        </tr>
-        <tr>
-          <td>Расходные материалы</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Доставки материалов</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Аренда крана</td>
-          <td>смена</td>
-        </tr>
-        <tr>
-          <td>Аренда бетононасоса (при необходимости)</td>
-          <td>ч</td>
-        </tr>
-        <tr>
-          <td>Итого закупка материала по этапу II</td>
-          <td>... руб.</td>
-        </tr>
-        <tr>
-          <td>Всего по сметному расчету</td>
-          <td>... руб.</td>
-        </tr>
-      </table>
+    <section class="content-block">
+      <div class="content-block__wrapper content-block__wrapper--wide">
+        <h3 class="content-block__title">Пример оформления сметы</h3>
+        <table class="table">
+          <caption class="table__title">Ремонт подпорной стены в районе КТП. Строительно-монтажные работы</caption>
+          <tr class="table__row table__row--title">
+            <th class="table__cell table__cell--title" rowspan="2">№</th>
+            <th class="table__cell table__cell--title" rowspan="2">Наименование работ</th>
+            <th class="table__cell table__cell--title" rowspan="2">Ед.изм.</th>
+            <th class="table__cell table__cell--title" rowspan="2">Кол-во</th>
+            <th class="table__cell table__cell--title" colspan="2">Стоим. материалов</th>
+            <th class="table__cell table__cell--title" colspan="2">Стоимость работ</th>
+            <th class="table__cell table__cell--title" rowspan="2">Итого</th>
+          </tr class="table__row">
+          <tr class="table__row table__row--title">
+            <th class="table__cell table__cell--title table__cell--subtitle">За един.</th>
+            <th class="table__cell table__cell--title table__cell--subtitle">Итого</th>
+            <th class="table__cell table__cell--title table__cell--subtitle">За един.</th>
+            <th class="table__cell table__cell--title table__cell--subtitle">Итого</th>
+          </tr class="table__row">
+          <tr class="table__row table__row--works">
+            <td class="table__cell">1</td>
+            <td class="table__cell">Очистка стены (снятие короеда, клея)</td>
+            <td class="table__cell">м<sup>2</sup></td>
+            <td class="table__cell">7.00</td>
+            <td class="table__cell">-</td>
+            <td class="table__cell">-</td>
+            <td class="table__cell">130.00</td>
+            <td class="table__cell">910.00</td>
+            <td class="table__cell">910.00</td>
+          </tr>
+          <tr class="table__row table__row--works">
+            <td class="table__cell">2</td>
+            <td class="table__cell">Очистка стен от копоти</td>
+            <td class="table__cell">м<sup>2</sup></td>
+            <td class="table__cell">20.00</td>
+            <td class="table__cell">-</td>
+            <td class="table__cell">-</td>
+            <td class="table__cell">50.00</td>
+            <td class="table__cell">1000.00</td>
+            <td class="table__cell">1000.00</td>
+          </tr>
+          <tr class="table__row table__row--works">
+            <td class="table__cell">3</td>
+            <td class="table__cell">Нанесение клея, сетки, короеда</td>
+            <td class="table__cell">м<sup>2</sup></td>
+            <td class="table__cell">7.00</td>
+            <td class="table__cell">-</td>
+            <td class="table__cell">1350.00</td>
+            <td class="table__cell">400.00</td>
+            <td class="table__cell">2800.00</td>
+            <td class="table__cell">4150.00</td>
+          </tr>
+          <tr class="table__row table__row--materials">
+            <td class="table__cell"></td>
+            <td class="table__cell">Клей</td>
+            <td class="table__cell">мешок</td>
+            <td class="table__cell">2.00</td>
+            <td class="table__cell">240.00</td>
+            <td class="table__cell">480.00</td>
+            <td class="table__cell">-</td>
+            <td class="table__cell">-</td>
+            <td class="table__cell">-</td>
+          </tr>
+          <tr class="table__row table__row--materials">
+            <td class="table__cell"></td>
+            <td class="table__cell">Сетка</td>
+            <td class="table__cell">м<sup>2</sup></td>
+            <td class="table__cell">7.00</td>
+            <td class="table__cell">30.00</td>
+            <td class="table__cell">210.00</td>
+            <td class="table__cell">-</td>
+            <td class="table__cell">-</td>
+            <td class="table__cell">-</td>
+          </tr>
+          <tr class="table__row table__row--materials">
+            <td class="table__cell"></td>
+            <td class="table__cell">Короед</td>
+            <td class="table__cell">мешок</td>
+            <td class="table__cell">2.00</td>
+            <td class="table__cell">330.00</td>
+            <td class="table__cell">660.00</td>
+            <td class="table__cell">-</td>
+            <td class="table__cell">-</td>
+            <td class="table__cell">-</td>
+          </tr>
+          <tr class="table__row table__row--works">
+            <td class="table__cell">4</td>
+            <td class="table__cell">Грунтовка и окраска</td>
+            <td class="table__cell">м<sup>2</sup></td>
+            <td class="table__cell">20.00</td>
+            <td class="table__cell">75.00</td>
+            <td class="table__cell">770.00</td>
+            <td class="table__cell">120.00</td>
+            <td class="table__cell">2400.00</td>
+            <td class="table__cell">3170.00</td>
+          </tr>
+          <tr class="table__row table__row--materials">
+            <td class="table__cell"></td>
+            <td class="table__cell">Грунтовка</td>
+            <td class="table__cell">л</td>
+            <td class="table__cell">3.00</td>
+            <td class="table__cell">40.00</td>
+            <td class="table__cell">120.00</td>
+            <td class="table__cell">-</td>
+            <td class="table__cell">-</td>
+            <td class="table__cell">-</td>
+          </tr>
+          <tr class="table__row table__row--materials">
+            <td class="table__cell"></td>
+            <td class="table__cell">Краска</td>
+            <td class="table__cell">кг</td>
+            <td class="table__cell">10.00</td>
+            <td class="table__cell">65.00</td>
+            <td class="table__cell">650.00</td>
+            <td class="table__cell">-</td>
+            <td class="table__cell">-</td>
+            <td class="table__cell">-</td>
+          </tr>
+          <tr class="table__row table__row--total">
+            <td class="table__cell"></td>
+            <td class="table__cell" colspan="7">Всего по смете:</td>
+            <td class="table__cell">9230.00</td>
+          </tr>
+        </table>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
-    <div class="container">
-      <div class="footer-contacts">
-        Строительная организация «Свой Дом»<br>
-        <a href="contacts.html">Как с нами связаться?</a><br>
-        E-mail: sales@moidom.com<br>
-        Телефон: +7 (900) 500-65-95
-      </div>
-      <div class="footer-icon"></div>
-      <div class="footer-developer-info">
-        <b>Разработано:</b>
-        <a class="footer-developer-name">Sqrl Corp.</a>
+    <div class="main-footer__wrapper">
+      <ul class="footer-contacts">
+        <li class="footer-contacts__item">Строительная организация «Свой Дом»</li>
+        <li class="footer-contacts__item">
+          <a class="footer-contacts__link" href="contacts.html">Как с нами связаться?</a>
+        </li>
+        <li class="footer-contacts__item">E-mail: <a class="footer-contacts__link" href="mailto:sales@moidom.com">
+            sales@moidom.com</a></li>
+        <li class="footer-contacts__item">Телефон: <a class="footer-contacts__link" href="tel:+79005006595">+7 (900)
+            500-65-95</a></li>
+      </ul>
+      <div class="footer-logo"></div>
+      <div class="copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a href="https://github.com/it-amalker" class="copyright__developer">Sqrl Corp.</a>
       </div>
     </div>
   </footer>

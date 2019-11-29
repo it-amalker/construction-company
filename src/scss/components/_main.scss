@@ -93,63 +93,7 @@
 /* ---------- ESTIMATE.HTML ---------- */
 
 
-.construction-info {
-  margin: 0;
-  padding: 10px 30px;
-}
 
-.estimate-item {
-  margin: 0;
-  padding: 0;
-}
-
-.estimate-example {
-  padding-bottom: 5px; 
-}
-.estimate-example-table {
-  border-collapse: collapse;
-
-  margin: 20px auto ;
-}
-
-.estimate-example-table-title {
-  margin-bottom: 10px;
-
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.estimate-example-table td, th {
-  padding: 5px;
-
-  border: 2px solid #000000;
-
-  font-size: 14px;
-}
-
-.estimate-example-table td:first-child {
-  width: 510px;
-
-  font-size: 12px;
-}
-
-.estimate-example-table td:last-child {
-  width: 50px;
-  
-  text-align: center;
-  font-size: 12px;  
-}
-
-.estimate-example-table tr:last-child td {
-  font-size: 14px;  
-  text-decoration: underline;
-}
-
-.estimate-example:last-child .estimate-example-table tr:nth-last-child(2) td {
-  font-size: 14px;  
-  text-decoration: underline;
-}
 
 
 /* ---------- DESIGN.HTML ---------- */
