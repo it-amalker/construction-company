@@ -10,8 +10,7 @@
     width: 350px; 
   }
 
-  &:hover,
-  &--inner-page:hover {
+  &:hover {
     filter: drop-shadow(3px 3px 10px rgba(43, 41, 35, 0.5));
   }
 }

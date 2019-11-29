@@ -38,6 +38,22 @@
 
 .content-block__item {
   padding-left: 5px;
+
+  &--intend-color {
+    position: relative;
+  }
+
+  &--intend-color::before {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: -9px;
+
+    border: 4px solid #5a3f08;
+    transform: rotate(45deg);
+
+  }
 }
 
 .content-block__link-more {

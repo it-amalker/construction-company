@@ -14,87 +14,107 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation container">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo.svg" width="50px" height="50px" alt="Логотип организации «Свой Дом»">
+    <div class="main-header__wrapper">
+      <a class="main-logo" href="index.html">
+        <img class="main-logo__img" src="img/sprites/sprite.svg#logo" width="50px" height="50px"
+          alt="Логотип организации «Свой Дом»">
       </a>
-      <ul class="site-navigation">
-        <li><a class="current-page">О нас</a></li>
-        <li><a href="design.html">Проектирование</a></li>
-        <li><a href="pool.html">Бассейны</a></li>
-        <li><a href="estimate.html">Смета</a></li>
-        <li><a href="gallery.html">Наши работы</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="contact-telephone">
-        <li><a>+7 (900) 500-65-95</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="container">
-    <section class="introduce">
-      <div class="introduce-logo inner-page">
-        <img src="img/about-us.png" width="512px" height="512px" alt="Инженер с чертежем">
+      <nav class="main-navigation">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="design.html">Проектирование</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="pool.html">Бассейны</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="estimate.html">Смета</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="gallery.html">Наши работы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contacts.html#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-telephone">
+        <a class="header-telephone__number" href="tel:+79005006595">+7 (900) 500-65-95</a>
       </div>
-      <div class="introduce-title-wrapper">
-        <h1 class="introduce-title">Строительная организация «Свой Дом»</h1>
-        <h2 class="introduce-description">Строительство частных домов в Москве и Московской области</h2>
+    </div>
+  </header>
+  <main class="main-page">
+    <section class="main-page__introduce introduce">
+      <div class="introduce__logo inner-page">
+        <img class="introduce__logo-img introduce__logo-img--inner-page" src="img/about-us.png"
+          alt="Инженер с чертежем">
+      </div>
+      <div class="introduce-title__wrapper">
+        <h1 class="introduce__title">Строительная организация «Свой Дом»</h1>
+        <h2 class="introduce__subtitle">Строительство частных домов в Москве и Московской области</h2>
       </div>
     </section>
-    <section class="about-us column">
-      <div class="about-us-content-wrapper">
-        <h3 class="about-us-title">Об организации «Свой Дом»</h3>
-        <p class="about-us-description">Наша строительная организация предоставляет услуги строительства
+    <section class="content-block main-page__block-margin">
+      <div class="content-block__wrapper">
+        <h3 class="content-block__title">Об организации «Свой Дом»</h3>
+        <p class="content-block__description">Наша строительная организация предоставляет услуги строительства
           гражданских
           объектов в Москве, Новой Москве и Московской области.</p>
-        <p class="about-us-description">Мы предлагаем быстро, надежно и качественно построить объекты любой
+        <p class="content-block__description">Мы предлагаем быстро, надежно и качественно построить объекты любой
           сложности.
           А также мы можем предложить Вам строительство дома по Вашему собственному проекту.</p>
-        <p class="about-us-description">У нас работают квалифицированные специалисты, которые умеют работать и
+        <p class="content-block__description">У нас работают квалифицированные специалисты, которые умеют работать и
           производить
           работы строго согласно ГОСТов и СНиПов.</p>
-        <p class="about-us-description">Мы гарантируем индивидуальный подход к каждому клиенту.</p>
+        <p class="content-block__description">Мы гарантируем индивидуальный подход к каждому клиенту.</p>
       </div>
-      <div class="about-us-logo">
-        <img src="img/about-us-logo.png" width="512px" height="512px" alt="Логотип инженера">
+      <div class="content-block__logo">
+        <img class="content-block__logo-img" src="img/about-us-logo.png" alt="Логотип инженера">
       </div>
     </section>
-    <section class="services-inner-page column">
-      <div class="services-inner-page-logo">
-        <img src="img/services_logo.png" width="393px" height="315px"
+    <section class="content-block">
+      <div class="content-block__logo">
+        <img class="content-block__logo-img" src="img/services_logo.png"
           alt="Строительные инструменты в перевернутой каске">
       </div>
-      <div class="services-inner-page-wrapper">
-        <h3 class="services-inner-page-title">Перечень услуг, предоставляемых организацией:</h3>
-        <ul class="services-inner-page-list">
-          <li class="services-inner-page-item">Геодезические работы</li>
-          <li class="services-inner-page-item">Проектирование</li>
-          <li class="services-inner-page-item">Осмечивание объекта</li>
-          <li class="services-inner-page-item">Сроительство частных домов под ключ</li>
-          <li class="services-inner-page-item">Ремонты зданий и сооружений</li>
-          <li class="services-inner-page-item">Электромонтажные работы</li>
-          <li class="services-inner-page-item">Монтаж металлоконструкций</li>
-          <li class="services-inner-page-item">Канализация, вода, отопление</li>
-          <li class="services-inner-page-item">Кровельные и фасадные работы</li>
-          <li class="services-inner-page-item">Благоустройство</li>
-          <li class="services-inner-page-item">Отделочные работы</li>
-          <li class="services-inner-page-item">Строительство бассейнов</li>
+      <div class="content-block__wrapper">
+        <h3 class="content-block__title">Перечень услуг, предоставляемых организацией:</h3>
+        <ul class="content-block__list">
+          <li class="content-block__item content-block__item--intend-color">Геодезические работы</li>
+          <li class="content-block__item content-block__item--intend-color">Проектирование</li>
+          <li class="content-block__item content-block__item--intend-color">Осмечивание объекта</li>
+          <li class="content-block__item content-block__item--intend-color">Сроительство частных домов под ключ</li>
+          <li class="content-block__item content-block__item--intend-color">Ремонты зданий и сооружений</li>
+          <li class="content-block__item content-block__item--intend-color">Электромонтажные работы</li>
+          <li class="content-block__item content-block__item--intend-color">Монтаж металлоконструкций</li>
+          <li class="content-block__item content-block__item--intend-color">Канализация, вода, отопление</li>
+          <li class="content-block__item content-block__item--intend-color">Кровельные и фасадные работы</li>
+          <li class="content-block__item content-block__item--intend-color">Благоустройство</li>
+          <li class="content-block__item content-block__item--intend-color">Отделочные работы</li>
+          <li class="content-block__item content-block__item--intend-color">Строительство бассейнов</li>
         </ul>
       </div>
     </section>
   </main>
   <footer class="main-footer">
-    <div class="container">
-      <div class="footer-contacts">
-        Строительная организация «Свой Дом»<br>
-        <a href="contacts.html">Как с нами связаться?</a><br>
-        E-mail: sales@moidom.com<br>
-        Телефон: +7 (900) 500-65-95
-      </div>
-      <div class="footer-icon"></div>
-      <div class="footer-developer-info">
-        <b>Разработано:</b>
-        <a class="footer-developer-name">Sqrl Corp.</a>
+    <div class="main-footer__wrapper">
+      <ul class="footer-contacts">
+        <li class="footer-contacts__item">Строительная организация «Свой Дом»</li>
+        <li class="footer-contacts__item">
+          <a class="footer-contacts__link" href="contacts.html">Как с нами связаться?</a>
+        </li>
+        <li class="footer-contacts__item">E-mail: <a class="footer-contacts__link" href="mailto:sales@moidom.com">
+            sales@moidom.com</a></li>
+        <li class="footer-contacts__item">Телефон: <a class="footer-contacts__link" href="tel:+79005006595">+7 (900)
+            500-65-95</a></li>
+      </ul>
+      <div class="footer-logo"></div>
+      <div class="copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a href="https://github.com/it-amalker" class="copyright__developer">Sqrl Corp.</a>
       </div>
     </div>
   </footer>
