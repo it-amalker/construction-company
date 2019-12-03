@@ -5,7 +5,7 @@
 
 .main-header__wrapper {
   @include container-desktop;
-
+  
   display: flex;
   justify-content: space-between;
 }
